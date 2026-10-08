@@ -43,4 +43,18 @@ public class Pedido {
     public void removeItem(ItemDoPedido item){
         items.remove(item);
     }
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SUMÁRIO DO PEDIDO \n");
+        sb.append("Momento do pedido" + getMoment() + "\n");
+        sb.append("STATUS: " + getStatus() + "\n");
+        for(ItemDoPedido ped : items){
+            sb.append(ped).append("\n");
+        }
+
+     return sb.toString();
+    }
 }
