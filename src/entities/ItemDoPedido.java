@@ -4,6 +4,8 @@ public class ItemDoPedido {
     private Integer quantity;
     private Double price;
 
+    Product product = new Product();
+
     public ItemDoPedido(Integer quantity, Double price) {
         this.quantity = quantity;
         this.price = price;
